@@ -16,5 +16,10 @@
     "url": "https://github.com/cryptojuice/fasthasher/issues"
   },
   "homepage": "https://github.com/cryptojuice/fasthasher",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "scrypt": "^3.0.1",
+    "express": "^4.4.5"
+  }
 }
