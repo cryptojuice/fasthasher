@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "features": "NODE_ENV=test node_modules/cucumber/bin/cucumber.js --format=pretty"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,15 @@
   "homepage": "https://github.com/cryptojuice/fasthasher",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.4.3",
+    "coffee-errors": "^0.8.6",
     "coffee-script": "^1.7.1",
     "express": "^4.4.5",
+    "request": "^2.36.0",
     "scrypt": "^3.0.1"
   },
   "devDependencies": {
+    "chai": "^1.9.1",
     "cucumber": "^0.4.0",
     "mocha": "^1.20.1"
   }
